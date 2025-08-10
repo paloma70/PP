@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand navbar-light bg-light p-3 shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" routerLink="/">Perfumería</a>
+    <div>
+      <a class="btn btn-outline-primary me-2" routerLink="/" routerLinkActive="active">Perfumes</a>
+      <a class="btn btn-outline-success me-2" routerLink="/crear" routerLinkActive="active">Crear Perfume</a>
+      <a class="btn btn-outline-info me-2" routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
+      <a class="btn btn-outline-warning" routerLink="/registro" routerLinkActive="active">Registrarme</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>

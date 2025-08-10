@@ -1,0 +1,16 @@
+<h2>Registro</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label>Nombre</label>
+    <input class="form-control" [(ngModel)]="nombre" name="nombre" required />
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" [(ngModel)]="email" name="email" required />
+  </div>
+  <div class="mb-3">
+    <label>Contraseña</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" required />
+  </div>
+  <button class="btn btn-success" type="submit">Registrarme</button>
+</form>

@@ -1,0 +1,12 @@
+<h2>Iniciar Sesión</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" [(ngModel)]="email" name="email" required />
+  </div>
+  <div class="mb-3">
+    <label>Contraseña</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" required />
+  </div>
+  <button class="btn btn-primary" type="submit">Entrar</button>
+</form>

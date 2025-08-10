@@ -1,59 +1,39 @@
+# PERFUMERIA
 
+*By: Eileen Sofia Jeronimo Camargo*
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+Este proyecto fue hecho con el objetivo de ser una **pagina funcional**, para una *empresa de perfumes*, obviamente hecha con todos los detalles a tomar en cuenta porque supuestamente se vendera esta *pagina*.
+---
+Especificaciones de este proyecto
 
-## Development server
+## 6 Proyecto Calificable
+**Aplicación web (SPA)**
 
-To start a local development server, run:
+Pensar en un problema
+Pensar en una solución
+Explicar los detalles del problema que se relacionarán con su solución
+Plantear una aplicación web que dará solución a ese problema
+Revisión
+Cumple (1)
+Cumple parcialmente (0.5)
+No cumple (0)
+MEAN Stack | Mongo-Express-Angular-Node
+Aplicación web completa (DB + Back + Front)
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Fecha de entrega: Jueves, 11 de Agosto de 2025
+Crear un nuevo repositorio llamado "bit-frontend"
+En canal de Discord (6-entrega-calificable)
+Nombre Completo
+URL GitHub Repositorio back (bit-backend)
+URL GitHub Repositorio front (bit-frontend)
+Mostrar base de datos
+CRUD completo (Front)
+---
+## Problema pensado
+El problema que yo pense, fue que una empresa de perfumeria recien iniciada, queria tener una pagina en la cual se pudiese crea una cuenta e iniciar sesion con ella para manejar diferentes articulos, como cambiar su precio, eliminarlos debido a que ya no hay stock, agregar nuevos productos que han llegado, ect...
+## Solucion pensada
+La solucion que pense fue sencilla, crear una pagina teniendo en cuenta todas las caracteristicas que nos exige el proyecto, sumado a uno que otro detalle para hacer la pagina ideal para la empresa y hacerla una pagina excelente y llamativa.
+## Relacion, solucion->problema
+La relacion especifica que existen entre el problema y mi solucion *pagina web* es la siguiente:
+1. Para crea e iniciar sesion no solo se tiene en cuenta un buen funcionamiento en backend y frontend, tambien se debe aplicar una conexion de MongoDB para poder guardar esa informacion en una base de datos.
+2. Igualmente para editar, crear o eliminar informacion se debe de llevar la cuenta de todas esas acciones en una base de datos con MongoDB.

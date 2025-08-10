@@ -3,39 +3,26 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-// Importar rutas
-const authRoutes = require('./routes/auth.routes');
-const perfumeRoutes = require('./routes/perfume.routes');
-
 dotenv.config();
 const app = express();
 
-// Middlewares
+// middlewares
 app.use(cors());
 app.use(express.json());
 
-// Conexión a MongoDB
+// rutas
+const authRoutes = require('./routes/auth.routes');
+const perfumeRoutes = require('./routes/perfume.routes');
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('✅ MongoDB conectado'))
-  .catch(err => console.error('❌ Error al conectar MongoDB:', err));
+  .catch(err => console.error('❌ Error MongoDB:', err));
 
-// Rutas
-app.use('/api/auth', authRoutes);       // Registro e inicio de sesión
-app.use('/api/perfumes', perfumeRoutes); // Listado y gestión de perfumes
+app.use('/api/auth', authRoutes);
+app.use('/api/perfumes', perfumeRoutes);
 
-// Ruta de prueba
-app.get('/', (req, res) => {
-  res.send('API de Perfumería funcionando 🚀');
-});
+// test endpoint
+app.get('/', (req, res) => res.send('API Perfumería OK'));
 
-// Manejo de rutas no encontradas
-app.use((req, res) => {
-  res.status(404).json({ message: 'Ruta no encontrada' });
-});
-
-// Iniciar servidor
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
-});
-
+app.listen(PORT, () => console.log(`🚀 Backend corriendo en http://localhost:${PORT}`));

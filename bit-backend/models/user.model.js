@@ -6,4 +6,9 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true }
 }, { timestamps: true });
 
+userSchema.methods.logout = function() {
+  this.tokens = [];
+  this.save();
+};
+
 module.exports = mongoose.model('User', userSchema);

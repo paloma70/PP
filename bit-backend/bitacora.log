@@ -1,0 +1,10 @@
+[2025-08-28T03:07:13.316Z] Acción: Usuario cerró sesión | Datos: {}
+[2025-08-28T03:07:13.404Z] Acción: Listado de usuarios | Datos: {"cantidad":1}
+[2025-08-28T19:48:24.539Z] Acción: Usuario registrado | Datos: {"nombre":"Andrés","email":"andres@example.com","id":"user123"}
+[2025-08-28T19:48:24.542Z] Acción: Usuario inició sesión | Datos: {"email":"andres@example.com","ip":"192.168.1.10"}
+[2025-08-28T19:48:24.542Z] Acción: Usuario cerró sesión | Datos: {"email":"andres@example.com"}
+[2025-08-28T19:48:24.543Z] Acción: Perfume registrado | Datos: {"id":"perfume001","nombre":"Dior Sauvage","precio":320000}
+[2025-08-28T19:48:24.543Z] Acción: Perfume actualizado | Datos: {"id":"perfume001","cambios":{"nombre":"Bleu de Chanel","precio":350000}}
+[2025-08-28T19:48:24.544Z] Acción: Perfume eliminado | Datos: {"id":"perfume001"}
+[2025-08-28T19:48:24.544Z] Acción: Listado de usuarios | Datos: {"cantidad":5}
+[2025-08-28T19:48:24.545Z] Acción: Listado de perfumes | Datos: {"cantidad":12}
